@@ -23,6 +23,7 @@ const server = new ApolloServer({
   }
 });
 
+//apollo server
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   server.applyMiddleware({ app });
